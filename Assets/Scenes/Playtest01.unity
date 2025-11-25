@@ -859,6 +859,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1310330129142431181, guid: 7e15ae1da6fa3c646b2c9351a44ec5d0, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 218d1e4a61671e2499c7adef0af93620, type: 2}
     - target: {fileID: 2793684115013177155, guid: 7e15ae1da6fa3c646b2c9351a44ec5d0, type: 3}
       propertyPath: m_DefaultActionMap
       value: 6aa062d5-0b92-47e9-bb20-251d4959c7cf
@@ -913,7 +917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7851584887733467446, guid: 7e15ae1da6fa3c646b2c9351a44ec5d0, type: 3}
       propertyPath: puppetName
-      value: Henbolone
+      value: Flagellica
       objectReference: {fileID: 0}
     - target: {fileID: 7851584887733467446, guid: 7e15ae1da6fa3c646b2c9351a44ec5d0, type: 3}
       propertyPath: startingPosition.x
@@ -941,6 +945,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1310330129142431181, guid: 7e15ae1da6fa3c646b2c9351a44ec5d0, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 218d1e4a61671e2499c7adef0af93620, type: 2}
     - target: {fileID: 5293979959716378771, guid: 7e15ae1da6fa3c646b2c9351a44ec5d0, type: 3}
       propertyPath: m_Name
       value: Player1
@@ -1522,13 +1530,13 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353399847}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 64120c8fcf9fb2d4d86929a08ee1aaa8, type: 3}
+  m_Resource: {fileID: 8300000, guid: 010fd17a8c881f54880bab6107ee7e8b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.455
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6832,7 +6840,7 @@ PrefabInstance:
     - target: {fileID: 1501461147521968719, guid: 64759d2bfa2981d4b80548269cac537c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: -876546973899608171, guid: c0d77e676f3f0ef4ebbfb067fe81ae27, type: 3}
+      objectReference: {fileID: 2100000, guid: 218d1e4a61671e2499c7adef0af93620, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
