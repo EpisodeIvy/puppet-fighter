@@ -98,3 +98,6 @@ InitTestScene*.unity*
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
 *.meta
+*.meta
+Assets/Hairibar.Ragdoll.Simplified-master/Editor/Animation/Custom Inspectors/SetRagdollProfileOnEnter Editors/SetRagdollWeightDistributionOnEnterEditor.cs.meta
+Assets/Hairibar.Ragdoll.Simplified-master/Editor/Animation/Custom Inspectors/SetRagdollProfileOnEnter Editors/SetRagdollWeightDistributionOnEnterEditor.cs.meta
