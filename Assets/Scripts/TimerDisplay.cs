@@ -20,11 +20,12 @@ public class TimerDisplay : MonoBehaviour
         int mO = minutes % 10; 
         int sT = seconds / 10; 
         int sO = seconds % 10;
+        /*
         Debug.Log(
     $"UpdateTimer() → total:{total} | " +
     $"minutes:{minutes} ({mT}{mO}) | " +
     $"seconds:{seconds} ({sT}{sO})"
-);
+);*/
 
         minuteTens.sprite = digitSprites[mT];
         minuteOnes.sprite = digitSprites[mO];
