@@ -1,6 +1,7 @@
-using UnityEngine;
 using System;
 using System.Collections;
+using UnityEditor;
+using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 public class IKControl : MonoBehaviour {
@@ -18,16 +19,24 @@ public class IKControl : MonoBehaviour {
     void Start ()
     {
         animator = GetComponent<Animator>();
+        Transform topmostParentTransform = transform.root; 
+        print("Topmost Parent: " + topmostParentTransform.name);    
+        //find child or grandchild object with name "RH"
+        rightHandObj = topmostParentTransform.FindRecursive("RH");
+        print("Right Hand Obj: " + rightHandObj.name);
+
+
+       
         GameObject go = GameObject.Find("RH");
         if (go!=null)
         print("Right Hand Obj: " + go.name);
         else
         print("Right Hand Obj not found!");
         
-        rightHandObj = GameObject.Find("RH").transform;
-        leftHandObj = GameObject.Find("LH").transform;  
-        rightFootObj = GameObject.Find("RF").transform;  
-        leftFootObj = GameObject.Find("LF").transform;  
+        //rightHandObj = go.transform;//topmostParentTransform.transform.Find("RH");//.transform;
+        leftHandObj = topmostParentTransform.transform.FindRecursive("LH").transform;  
+        rightFootObj = topmostParentTransform.transform.FindRecursive("RF");//.transform;  
+        leftFootObj = topmostParentTransform.transform.FindRecursive("LF");//.transform;  
         lookObj = Camera.main.transform;    
     }
 
@@ -92,3 +101,32 @@ public class IKControl : MonoBehaviour {
     }
 }
 
+public static class TransformExtensions
+{
+    /// <summary>
+    /// Recursively searches for a child or grandchild Transform by name.
+    /// </summary>
+    /// <param name="parent">The parent Transform to start the search from.</param>
+    /// <param name="name">The name of the Transform to find.</param>
+    /// <returns>The found Transform, or null if not found.</returns>
+    public static Transform FindRecursive(this Transform parent, string name)
+    {
+        // Check immediate children first
+        Transform foundTransform = parent.Find(name);
+        if (foundTransform != null)
+        {
+            return foundTransform;
+        }
+
+        // Recursively search in children's children
+        foreach (Transform child in parent)
+        {
+            foundTransform = child.FindRecursive(name);
+            if (foundTransform != null)
+            {
+                return foundTransform;
+            }
+        }
+        return null;
+    }
+}
