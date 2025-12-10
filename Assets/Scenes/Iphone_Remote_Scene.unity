@@ -171,6 +171,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pumpkin (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2107,8 +2115,8 @@ Transform:
   m_GameObject: {fileID: 405109080}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.26, y: 0.5, z: 0}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 998969965}
@@ -2459,6 +2467,14 @@ PrefabInstance:
     - target: {fileID: 753642575381713311, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
       propertyPath: m_Name
       value: Pumpkin (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3952,6 +3968,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pumpkin (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4008,6 +4032,14 @@ PrefabInstance:
     - target: {fileID: 753642575381713311, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
       propertyPath: m_Name
       value: Pumpkin (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4071,7 +4103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01bae5c7764c24935b91e033b0f480aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  movementThreshold: 0.001
+  movementThreshold: 0.1
   sensitivity: 50
   rotationAngle1: 90
   rotationAngle2: 0
@@ -4081,6 +4113,7 @@ MonoBehaviour:
   skipUpdateForDuration: 0
   skipDuration: 0.2
   moveDuration: 0.1
+  velocityScale: 50
 --- !u!4 &769518427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6589416464212237119, guid: 706d2212710cc4e4d929aad246514665, type: 3}
@@ -5026,6 +5059,14 @@ PrefabInstance:
     - target: {fileID: 753642575381713311, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
       propertyPath: m_Name
       value: Pumpkin (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7745,6 +7786,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pumpkin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8348,6 +8397,14 @@ PrefabInstance:
     - target: {fileID: 753642575381713311, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
       propertyPath: m_Name
       value: Pumpkin (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9246,7 +9303,7 @@ Transform:
   m_GameObject: {fileID: 1864147042}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.01, y: 2.02, z: 1.78}
+  m_LocalPosition: {x: 2.23, y: 3.95, z: 0.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9304,6 +9361,14 @@ PrefabInstance:
     - target: {fileID: 753642575381713311, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
       propertyPath: m_Name
       value: Pumpkin (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10489,6 +10554,14 @@ PrefabInstance:
     - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
       propertyPath: m_Mass
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792499348694861568, guid: 26f0f1e0a88c3c643bea7da13f79b282, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
