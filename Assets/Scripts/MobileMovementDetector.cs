@@ -30,7 +30,7 @@
         // Input.compensateOrientation = true; // Adjusts for device orientation
 
         startPosition = transform.position;
-        position = startPosition;
+        //position = startPosition;
     }
 
     public void SkipUpdate()
