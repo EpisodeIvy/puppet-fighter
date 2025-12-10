@@ -40,6 +40,17 @@ public class IKControl : MonoBehaviour {
         lookObj = Camera.main.transform;    
     }
 
+//use "[" to lessen IKWeight and "]" to increase IKWeight between 0 and 1
+void Update () 
+    {
+        if (ikActive) {
+            if (Input.GetKeyDown("["))
+                IKWeight -= (IKWeight>0f?0.1f:0f);
+            if (Input.GetKeyDown("]"))
+                IKWeight += (IKWeight<1f?0.1f:0f);
+        }       
+    }
+    void OnEnable () {}
     //a callback for calculating IK
     void OnAnimatorIK()
     {

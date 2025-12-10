@@ -4071,7 +4071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01bae5c7764c24935b91e033b0f480aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  movementThreshold: 0.1
+  movementThreshold: 0.001
   sensitivity: 50
   rotationAngle1: 90
   rotationAngle2: 0
